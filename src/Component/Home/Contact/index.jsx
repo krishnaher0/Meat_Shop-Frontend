@@ -4,6 +4,7 @@ import call from "../../../assets/images/call.png";
 import location from "../../../assets/images/location.png";
 import mail from "../../../assets/images/mail.png";
 import Header from '../../Pages/Header';
+import Footer from '../../Footer';
 
 const Contact = () => {
   const [name, setName] = useState('');
@@ -71,7 +72,7 @@ const Contact = () => {
               We’d love to hear from you! If you have any questions, need assistance, or just want to provide feedback, don’t hesitate to get in touch with us. Here’s how you can reach us:
             </p>
           </div>
-          <div className="flex flex-col gap-4 mb-5 bg-white rounded-lg md:flex-row p-2 xl:w-[80%] xl:mx-auto lg:w-[85%] lg:mx-auto shadow-xl">
+          <div className="flex flex-col gap-4 mb-5 bg-red-500 rounded-lg md:flex-row p-2 xl:w-[80%] xl:mx-auto lg:w-[85%] lg:mx-auto shadow-xl">
             <div className="flex flex-col bg-dark-blue rounded-lg px-2 py-6 shadow-xl text-white gap-3 md:gap-6 md:px-7 md:py-12 md:w-[75%] lg:max-w-[394px] llg:max-w-[420px] xl:max-w-[500px]">
               <div className="flex flex-col gap-2">
                 <h2 className="text-xl font-medium text-center md:text-start">Contact Information</h2>
@@ -118,7 +119,7 @@ const Contact = () => {
                 name="message"onChange={handleInputChange} />
                 </div>
                 <div className="flex justify-start">
-                  <button className="px-3 py-2 bg-dark-blue rounded-lg text-white" type="submit">Send Message</button>
+                  <button className="px-3 py-2 bg-blue-600 rounded-lg text-blue" type="submit">Send Message</button>
                 </div>
                 {responseMessage && <p className="response-message">{responseMessage}</p>}
               </form>
@@ -126,6 +127,7 @@ const Contact = () => {
           </div>
         </div>
       </section>
+  
     </>
   );
 };

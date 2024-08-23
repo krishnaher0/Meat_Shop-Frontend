@@ -16,9 +16,9 @@ const options = {
     type: 'area',
     dropShadow: {
       enabled: true,
-      color: '#623CEA14',
+      color: '#DAF7A6',
       top: 10,
-      blur: 4,
+      blur: 8,
       left: 0,
       opacity: 0.1,
     },
@@ -65,8 +65,8 @@ const options = {
   },
   markers: {
     size: 4,
-    colors: '#fff',
-    strokeColors: '#3C50E0',
+    colors: '#FFFACD',
+    strokeColors: '	#FF0000',
     strokeWidth: 3,
     strokeOpacity: 0.9,
     fillOpacity: 1,
@@ -78,8 +78,8 @@ const options = {
   xaxis: {
     type: 'category',
     categories: [
-      'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
-      'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec',
+      'Baisakh', 'Jestha', 'Ashar', 'Shrawan', 'Bhadra', 'Ashwin',
+      'Kartik', 'Mangsir', 'Poush', 'Magh', 'Falgun', 'Chaitra',
     ],
     axisBorder: {
       show: false,
@@ -130,6 +130,7 @@ const LineChart = () => {
  
   return (
     <div className="col-span-12 rounded-sm border border-stroke bg-white px-5 pt-7.5 pb-5 shadow-default dark:border-strokedark dark:bg-boxdark sm:px-7.5 xl:col-span-8">
+    
       <div className="flex flex-wrap items-start justify-between gap-3 sm:flex-nowrap">
         <h2 className="text-lg font-semibold text-heading">Monthly Payments</h2>
       </div>

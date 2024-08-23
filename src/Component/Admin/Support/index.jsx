@@ -25,7 +25,7 @@ const ContactMessages = () => {
       {message && <p className="text-red-600 mb-4">{message}</p>}
       <table className="w-full bg-white shadow-md rounded-lg overflow-hidden">
         <thead>
-          <tr className="bg-blue-500 text-white">
+          <tr className="bg-green-500 text-white">
             <th className="py-3 px-4">Name</th>
             <th className="py-3 px-4">Email</th>
             <th className="py-3 px-4">Message</th>

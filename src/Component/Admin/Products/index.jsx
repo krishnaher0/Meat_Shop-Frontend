@@ -93,7 +93,7 @@ const Products = () => {
   return (
     <div className="container mx-auto p-4">
       <button
-        className="bg-blue-500 text-white py-2 px-4 rounded mb-4"
+        className="bg-blue-500 text-black py-2 px-4 rounded mb-4"
         onClick={() => setIsModalOpen(true)}
       >
         Add Product
@@ -101,7 +101,7 @@ const Products = () => {
       <FormModal
         isOpen={isModalOpen}
         onClose={() => {
-          setIsModalOpen(false);
+          setIsModalOpen(true);
           setEditId(null);
         }}
       >

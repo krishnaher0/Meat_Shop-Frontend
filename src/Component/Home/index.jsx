@@ -10,6 +10,7 @@ const Home =()=>{
         <MainBody/>
         <DescBody/>
         <LearnMore/>
+     
         </>
     )
 }

@@ -6,6 +6,7 @@ const Bookings = () => {
   return (<>
    
     <Cart/>
+   
     </>
   )
 }

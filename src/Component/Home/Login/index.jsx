@@ -10,31 +10,7 @@ const Login = () => {
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const navigate = useNavigate();
- 
-  // useEffect(() => {
-  //   const checkTokenAndRefresh = async () => {
-  //     const token = localStorage.getItem("token");
-  //     if (token) {
-  //       try {
-  //         const response = await axios.post("http://localhost:8080/api/auth/refresh", null, {
-  //           headers: {
-  //             "Authorization": `Bearer ${token}`
-  //           }
-  //         });
-  //         const newAccessToken = response.data;
-  //         localStorage.setItem("token", newAccessToken);
-  //       } catch (error) {
-  //         console.error("Failed to refresh token:", error);
-  //         alert("Failed to refresh token. Please log in again.");
-  //         // localStorage.removeItem("token");
-  //         // navigate("/login");
-  //       }
-  //     }
-  //   };
- 
-  //   checkTokenAndRefresh();
-  // }, []);
- 
+
   const handleSignIn = async (e) => {
     e.preventDefault();
     try {
@@ -168,7 +144,7 @@ const Login = () => {
               </p>
             ) : (
               <p className="text-sm">
-                New to HomeScape?{' '}
+                New to tryMeat?{' '}
                 <span
                   className="text-blue-500 cursor-pointer hover:underline"
                   onClick={() => setIsSignUp(true)}
